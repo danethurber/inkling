@@ -1,0 +1,26 @@
+{
+  "name": "inkling-proto",
+  "version": "0.0.0",
+  "description": "example app for ember markdown editor",
+  "main": "server/startup.js",
+  "scripts": {
+    "start": "foreman start",
+    "test": "npm test",
+    "postinstall": "node_modules/bower/bin/bower install -f"
+  },
+  "repository": "",
+  "author": "Dane Thurber <dane.thurber@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "coffee-script": "~1.6.3",
+    "config": "~0.4.35",
+    "startup": "~0.3.0",
+    "nib": "~1.0.2",
+    "mincer-emblem-engine": "~0.1.6",
+    "stylus": "~0.42.1",
+    "mincer": "~0.5.13",
+    "jade": "~1.1.5",
+    "bower": "~1.2.8",
+    "express": "~3.4.8"
+  }
+}

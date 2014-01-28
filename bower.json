@@ -1,0 +1,24 @@
+{
+  "name": "inkling-proto",
+  "version": "0.0.0",
+  "authors": [
+    "Dane Thurber <dane.thurber@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "handlebars": "~1.1.2",
+    "ember": "~1.2.0",
+    "ember-data": "~1.0.0-beta.4",
+    "normalize-stylus": "*"
+  }
+}
