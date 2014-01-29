@@ -1,1 +1,3 @@
-p hello world
+= view App.InklingView
+  = view App.InklingEditor valueBinding=view.markdown
+  = view App.InklingPreview value=view.markdown
