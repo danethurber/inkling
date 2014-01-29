@@ -1,1 +1,2 @@
-= convert-markdown view.value
+.inkling-preview-inner
+  = convert-markdown view.value

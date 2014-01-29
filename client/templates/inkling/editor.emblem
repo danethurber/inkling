@@ -1,15 +1,16 @@
-ul.inkling-editor-tools
-  li
-    i.inkling-editor-tool.fa.fa-bold
-  li
-    i.inkling-editor-tool.fa.fa-italic
-  li
-    i.inkling-editor-tool.fa.fa-list
-  li
-    i.inkling-editor-tool.fa.fa-list-ol
-  li
-    i.inkling-editor-tool.fa.fa-link
-  li
-    i.inkling-editor-tool.fa.fa-picture-o
+.inkling-editor-inner
+  ul.inkling-editor-tools
+    li
+      i.inkling-editor-tool.fa.fa-bold
+    li
+      i.inkling-editor-tool.fa.fa-italic
+    li
+      i.inkling-editor-tool.fa.fa-list
+    li
+      i.inkling-editor-tool.fa.fa-list-ol
+    li
+      i.inkling-editor-tool.fa.fa-link
+    li
+      i.inkling-editor-tool.fa.fa-picture-o
 
-= textarea class="inkling-editor-input" value=view.value
+  = textarea class="inkling-editor-input" value=view.value
