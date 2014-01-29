@@ -20,6 +20,7 @@
     "ember": "~1.2.0",
     "ember-data": "~1.0.0-beta.4",
     "normalize-stylus": "*",
-    "showdown": "~0.3.1"
+    "showdown": "~0.3.1",
+    "font-awesome": "~4.0.3"
   }
 }
