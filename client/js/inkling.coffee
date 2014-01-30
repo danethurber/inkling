@@ -17,13 +17,16 @@ App.MarkdownEditor = Ember.View.extend
   classNames: ['inkling-editor-input']
   proxiedEvents: ['bold', 'italicize']
 
-  editorOpts: {}
+  editorOpts:
+    lineWrapping: true
 
   didInsertElement: () ->
     el = @.$()[0]
     ctrl = @get 'controller'
 
-    mirror = new window.CodeMirror el, @editorOpts
+    opts = Ember.merge @editorOpts, value: @get('value')
+
+    mirror = new window.CodeMirror el, opts
 
     mirror.on 'change', (instance) =>
       @set 'value', instance.getValue()
