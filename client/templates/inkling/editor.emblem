@@ -1,16 +1,2 @@
 .inkling-editor-inner
-  ul.inkling-editor-tools
-    li
-      i.inkling-editor-tool.fa.fa-bold click="bold"
-    li
-      i.inkling-editor-tool.fa.fa-italic click="italicize"
-    li
-      i.inkling-editor-tool.fa.fa-list
-    li
-      i.inkling-editor-tool.fa.fa-list-ol
-    li
-      i.inkling-editor-tool.fa.fa-link
-    li
-      i.inkling-editor-tool.fa.fa-picture-o
-
   = view App.MarkdownEditor value=view.value

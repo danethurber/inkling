@@ -1,8 +1,4 @@
-App.InklingController = Ember.Controller.extend Ember.Evented,
-  actions:
-    bold: () -> @trigger 'bold'
-    italicize: () -> @trigger 'italicize'
-
+App.InklingController = Ember.Controller.extend()
 
 App.InklingView = Ember.View.extend
   markdown: ''
@@ -13,29 +9,40 @@ App.InklingEditor = Ember.View.extend
   classNames: ['inkling-editor']
 
 
-App.MarkdownEditor = Ember.View.extend
-  classNames: ['inkling-editor-input']
-  proxiedEvents: ['bold', 'italicize']
+App.MarkdownEditor = Ember.TextArea.extend
+  editorOpts: {}
 
-  editorOpts:
-    lineWrapping: true
+  toolbarConfig: [{
+    name: 'bold'
+    action: Editor.toggleBold
+    shortcut: 'Ctrl-B'
+    className: 'icon-bold'
+  }, {
+    name: 'italic'
+    action: Editor.toggleItalic
+  }, '|', {
+    name: 'quote'
+    action: Editor.toggleBlockquote
+  }, '|',{
+    name: 'link'
+    action: Editor.drawLink
+  }, {
+    name: 'image',
+    action: Editor.drawImage
+  }]
+
 
   didInsertElement: () ->
     el = @.$()[0]
     ctrl = @get 'controller'
+    opts = Ember.merge @editorOpts,
+      element: el
+      toolbar: @toolbarConfig
 
-    opts = Ember.merge @editorOpts, value: @get('value')
+    editor = new Editor opts
 
-    mirror = new window.CodeMirror el, opts
-
-    mirror.on 'change', (instance) =>
+    editor.codemirror.on 'change', (instance) =>
       @set 'value', instance.getValue()
-
-    ctrl.on(type, $.proxy(@[type], @)) for type in @proxiedEvents
-
-  bold: () -> console.log 'bold it'
-
-  italicize: () -> console.log 'italicize it'
 
 
 App.InklingPreview = Ember.View.extend
