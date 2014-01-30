@@ -1,7 +1,7 @@
 .inkling-editor-inner
   ul.inkling-editor-tools
     li
-      i.inkling-editor-tool.fa.fa-bold click="boldSelection"
+      i.inkling-editor-tool.fa.fa-bold click="bold"
     li
       i.inkling-editor-tool.fa.fa-italic
     li
