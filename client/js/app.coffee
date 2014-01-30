@@ -3,6 +3,7 @@
 #= require ./../components/ember/ember.js
 #= require ./../components/ember-data/ember-data.js
 #= require ./../components/showdown/compressed/showdown.js
+#= require ./../components/codemirror/lib/codemirror.js
 
 #= require_self
 #= require_tree ./config

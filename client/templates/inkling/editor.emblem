@@ -3,7 +3,7 @@
     li
       i.inkling-editor-tool.fa.fa-bold click="bold"
     li
-      i.inkling-editor-tool.fa.fa-italic
+      i.inkling-editor-tool.fa.fa-italic click="italicize"
     li
       i.inkling-editor-tool.fa.fa-list
     li
@@ -13,4 +13,4 @@
     li
       i.inkling-editor-tool.fa.fa-picture-o
 
-  = view App.InklingTextArea value=view.value
+  = view App.MarkdownEditor value=view.value
