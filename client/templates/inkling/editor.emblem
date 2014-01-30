@@ -1,7 +1,7 @@
 .inkling-editor-inner
   ul.inkling-editor-tools
     li
-      i.inkling-editor-tool.fa.fa-bold
+      i.inkling-editor-tool.fa.fa-bold click="boldSelection"
     li
       i.inkling-editor-tool.fa.fa-italic
     li
@@ -13,4 +13,4 @@
     li
       i.inkling-editor-tool.fa.fa-picture-o
 
-  = textarea class="inkling-editor-input" value=view.value
+  = view App.InklingTextArea value=view.value
