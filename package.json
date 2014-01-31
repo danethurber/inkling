@@ -1,5 +1,5 @@
 {
-  "name": "inkling-proto",
+  "name": "inkling",
   "version": "0.0.0",
   "description": "example app for ember markdown editor",
   "main": "server/startup.js",
