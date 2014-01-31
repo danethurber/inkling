@@ -4,6 +4,14 @@
 #= require ./../components/ember-data/ember-data.js
 #= require ./../components/showdown/compressed/showdown.js
 
+#= require ./../components/codemirror/lib/codemirror.js
+#= require ./../components/codemirror/lib/codemirror.js
+#= require ./../components/codemirror/mode/markdown/markdown.js
+#= require ./../components/codemirror/mode/xml/xml.js
+#= require ./../components/leptureeditor/vendor/continuelist.js
+#= require ./../components/leptureeditor/src/intro.js
+#= require ./../components/leptureeditor/src/editor.js
+
 #= require_self
 #= require_tree ./config
 #= require ./helpers
